@@ -100,7 +100,7 @@ div#header a{
 
 div#header a:hover, a:active{
 	text-decoration: none;
-	color: #B8860B;
+	color: #FF8000;
 }
 
 
@@ -161,7 +161,7 @@ div#footer{
 
 div#corpo a:hover, a:active{
 	text-decoration: none;
-	color: rgb(255, 140, 0);
+	color: #FF8000;
 }
 
 div#container a{
@@ -172,19 +172,19 @@ div#container a{
 
 div#container a:hover, a:active{
 	text-decoration: none;
-	color: rgb(255, 140, 0);
+	color: #FF8000;
 	width: 800px;
 }
 
 div#container2 a{
 	text-decoration: none;
-	color: rgb(255, 140, 0);
+	color: #FF8000;
 	width: 800px;
 }
 
 div#container2 a:hover, a:active{
 	text-decoration: none;
-	color: rgb(255, 140, 0);
+	color: #FF8000;
 	width: 800px;
 }
 
@@ -196,7 +196,7 @@ div#footer a{
 
 div#footer a:hover, a:active{
 	text-decoration: none;
-	color: rgb(255, 140, 0);
+	color: #FF8000;
 	width: 800px;
 }
 
@@ -236,7 +236,7 @@ text-decoration: none
 }
 
 div#navigation a:hover{
-color: rgb(255, 140, 0);;
+color:#FF8000;
 text-decoration: none;
 }
 
