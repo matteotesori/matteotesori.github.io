@@ -4,30 +4,9 @@ html,body{
 	padding:0;
 }
 
-table#t01{
-    border: 0px solid rgb(255, 255, 255);
-    border-collapse: collapse;
-	text-align: center;
-	padding:0px;
-	font-size: 11px;
-}
-table#t02{
-    border: 0px solid white;
-    border-collapse: collapse;
-	padding:0px;
-}
-table#t03{
-    border: 0px solid white;
-    border-collapse: collapse;
-	text-align: center;
-	padding:0px;
-	font-size: 10.5px;
-}
-
 body{
 	margin: auto;
-	font-size: 13.2px;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: left;
 	color: #333;
 	background-color: rgba(35, 55, 59);
@@ -38,33 +17,18 @@ body{
 
 
 div#container{
-	width: 800px;
-	margin: auto;
-	margin-top: 10px;
+	width: 1280px;
+	margin: 0 auto;
 	border-top: 0px solid #999;
 	border-bottom: 0px solid #999;
 	border-left: 0px solid #999;
 	border-right: 0px solid #999;
 	background-color: rgb(35, 55, 59);
-	margin-left: -350px; 
-    margin-top: -200px; 
-    position: absolute; left: 50%; top: 50%;
-	
-}
-
-div#container2{
-	width: 800px;
-	margin: auto;
-	margin-top: 10px;
-	border-top: 0px solid #999;
-	border-bottom: 0px solid #999;
-	border-left: 0px solid #999;
-	border-right: 0px solid #999;
-	background-color: rgb(35, 55, 59);
-	margin-left: -350px; 
-    position: absolute; left: 50%;
-	text-align: justify;
-    text-justify: inter-word;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 div#corpo{
@@ -73,11 +37,8 @@ div#corpo{
 	font-weight: normal;
 	background-color: rgb(35, 55, 59);
 	color: white;
-	width: 800px;
-	margin: auto;
-	margin-top: -15px;
-	margin-bottom: 2px;
-	margin-left: 15px;
+	width: 1280px;
+	margin: 0 auto;
 }
 
 /*stili header */
@@ -87,9 +48,10 @@ div#header{
 	color: white;
 	text-align: justify;
 	line-height: 1.2;
-	height:300px;
-	width: 800px;
-	margin: auto;
+	height:500px;
+	width: 1280px;
+	margin: 0 auto;
+	font-size: 1em;
 }
 
 div#header a{
@@ -112,7 +74,7 @@ h1,h2{
 h1{
 	/* font-family: sans-serif; */
 	margin-left: 0px;
-	font-size: 2.5em;
+	font-size: 2.4em;
 	font-weight: bold;
 	letter-spacing: .04em;
 	word-spacing: .2em;
@@ -120,16 +82,16 @@ h1{
 }
 
 h2{
-	font-family: serif;
-	font-style: italic;
-	font-size: 1.2em;
-	font-weight: normal;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 0px 0 0px;
 }
 
 h3{
-	font-size: 1.1em;
-	font-weight: bold;
-	margin: 10px 0 0px;
+	font-size: 1em;
+	font-family: serif;
+	font-style: italic;
+	margin: 0px 0 0px;
 }
 
 h4{
@@ -138,23 +100,26 @@ h4{
 }
 
 h4{
-	font-size: 1.1em;
+	font-size: 4em;
 	font-weight: normal;
 	margin: 10px 0 0px;
 	color:white;
 }
 
+h5{
+	color: rgba(255, 255, 255, 0.3);
+}
+
 div#footer{
-	text-align: center;
-	height: 150px;
+	text-align: left;
+	height: 10px;
 	padding: 0.5em;
 	background-color: rgb(35, 55, 59); 
 	color: white;
-	width: 800px;
-	margin: 0 auto;
-	font-size: 1em;
-	margin-top: -6px;
-	margin-bottom: 2px;
+	width: 1280px;
+	font-size: 0.9em;
+	margin-top: -50px;
+	margin-bottom: 100px;
 }
 
 
@@ -162,54 +127,57 @@ div#footer{
 div#corpo a:hover, a:active{
 	text-decoration: none;
 	color: #FF8000;
+	transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 div#container a{
 	text-decoration: none;
 	/* color: #808080; */
-
+	transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 div#container a:hover, a:active{
 	text-decoration: none;
 	color: #FF8000;
-	width: 800px;
+	width: 1280px;
+	transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 div#container2 a{
 	text-decoration: none;
 	color: #FF8000;
-	width: 800px;
+	width: 1280px;
 }
 
 div#container2 a:hover, a:active{
 	text-decoration: none;
 	color: #FF8000;
-	width: 800px;
+	width: 1280px;
 }
 
 div#footer a{
 	text-decoration: none;
 	color: white;
-	width: 800px;
+	width: 1280px;
+	transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 div#footer a:hover, a:active{
 	text-decoration: none;
 	color: #FF8000;
-	width: 800px;
+	width: 1280px;
 }
 
 div#navigation{
 	background-color:rgb(35, 55, 59);
-	font-size: 0.7em;
+	font-size: 1em;
 	text-align: center;
-	margin-top: -35px;
+	margin-top: -5px;
   	text-transform: uppercase;
-	width: 800px;
-	height: 50px;
+	width: 1280px;
+	height: 55px;
 	vertical-align: middle;
-	width: 800px;
+	transition-duration: 0.4s;
 }
 
 div#navigation ul{
@@ -223,7 +191,7 @@ display: inline;
 margin: 0 0 0 1em;
 padding: 0;
 margin-top: 50px;
-margin-bottom: 40px;
+margin-bottom: 50px;
 font-size: 1.5em;
 font-weight: normal;
 color: white;
@@ -238,6 +206,7 @@ text-decoration: none
 div#navigation a:hover{
 color:#FF8000;
 text-decoration: none;
+transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 div#navigation a#activelink{
@@ -248,3 +217,86 @@ img{
 	border-radius: 5%;
 }
 
+.table1{
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+.table1 tr{
+	border: 0px solid #ddd;
+}
+
+.table1 td{
+	border: 0px solid #ddd;
+}
+
+.tablevote{
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 0.7em;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.tablevote tr{
+	border: 0px solid #ddd;
+}
+
+.tablevote td{
+	border: 0px solid #ddd;
+}
+
+.tablestats{
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 0.8em;
+	margin-top: 10px;
+}
+
+.tablestats td{
+	text-align: center;
+}
+
+.gradtab{
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 1em;
+	margin-top: -15px;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 10px;
+  }
+  
+  .button1 {
+	background-color: red;
+	color: white; 
+	border: 2px solid white;
+  }
+  
+  .button1:hover {
+	background-color: white;
+	color: rgb(35, 55, 59);
+	border: 2px solid #FF8000;
+  }
+  
+  .button2 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+	background-color: #008CBA;
+	color: white;
+  }
