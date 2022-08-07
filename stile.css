@@ -13,6 +13,9 @@ body{
 	border-radius: 15px 15px 0px 0px;
 	margin-left:auto;
     margin-right:auto;
+	animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -300,3 +303,73 @@ img{
 	background-color: #008CBA;
 	color: white;
   }
+
+  span#copyleft {
+	font: 18px Arial, sans-serif;
+	display: inline-block;
+	transform: rotate(180deg);
+  }
+
+  .popup{
+	color:rgb(35, 55, 59);
+    background-color: #ffffff;
+    width: 1000px;
+	height: 550px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none; 
+    text-align: center;
+	border: 3px solid;
+	border-color: coral;
+}
+
+.popup button{
+    display: block;
+    margin: 0 0 auto;
+    background-color: transparent;
+    font-size: 20px;
+    color: #ffffff;
+		background: rgb(35, 55, 59);
+		border-radius: 10px;
+		width: 100px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup a{
+	color: rgb(35, 55, 59);
+}
+.popup a:hover{
+	color: #FF8000;
+}
+
+.popup button:hover {
+	background-color: white;
+	color: rgb(35, 55, 59);
+	border: 2px solid #FF8000;
+	transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.popupimage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 45%;
+  }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

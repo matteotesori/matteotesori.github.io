@@ -242,46 +242,6 @@
 	</tr>
 	</table>
 </div>
-
-
-<!--Pop up-->
-<div class="popup">
-	<h2>JUST ONE SECOND...</h2>
-	<p  align="justify" >
-		I've designed my website by taking inspiration from the style that I use to write my personal notes. 
-		I do really love to write such notes in LaTeX, using the beautiful <a href="https://ctan.org/pkg/beamertheme-metropolis">Metropolis</a> dark theme (by <a href="https://bloerg.net/about/">Matthias Vogelgesang</a>) of the beamer document class.
-		As consequence, each page of my website highly resembles a slide of a typical presentation in a 16:9 aspect ratio.
-		If you are on a mobile device, like a smartphone or a tablet, I suggest to you to rotate it 90 degrees clockwise. 
-		By doing this, you will be able to match the landscape format of my "slide-look-alike" website and see better the varius contents.
-		<img src="immagini/phone_rot.svg" class="popupimage">
-		Take in mind that my website is desktop-native, meaning that the best device to visualize it is just a regular computer.
-		If you still prefer to use a mobile device and you struggle to read the part written with small text, you can always zoom in without loosing resolution.
-		<br> 
-		<br>
-		I like feedbacks and I consider myself as an open-minded person driven by the love of learning how to do new things: if you have some suggestion regarding how to improve my website please send me an email with your observations, 
-		I would appreciate it. 
-		<br>
-		<br>
-		Good navigation and thank you for your attention, 
-		<br
-		>Matteo
-	</p>
-	<p align="center">	<button id="close">gotcha !</button></p>
-</div>
-
-<script type="text/javascript">
-	window.addEventListener("load", function(){
-		setTimeout(
-			function open(event){
-				document.querySelector(".popup").style.display = "block";
-			},
-			0
-		)
-	});
-	document.querySelector("#close").addEventListener("click", function(){
-	document.querySelector(".popup").style.display = "none";
-	});
-</script>
 </body>
 
 </html>
