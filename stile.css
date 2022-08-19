@@ -88,6 +88,188 @@ div#header a:hover, a:active{
 	color: #FF8000;
 }
 
+div#portrait{
+	vertical-align: middle;
+	display: table-cell;
+	width: 385px;
+	height: 385px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#portraitcompl{
+	vertical-align: middle;
+	display: table-cell;
+	width: 860px;
+	height: 385px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#header2{
+	background-color:rgb(35, 55, 59);
+	color: white;
+	width: 860px;
+	margin-left: 20px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#header2 a{
+	text-decoration: none;
+	/* color: #808080; */
+	color: white;
+}
+
+div#header2 a:hover, a:active{
+	text-decoration: none;
+	color: #FF8000;
+}
+
+div#homedesc{
+	margin-top: 15px;
+	margin-bottom: 2px;
+	width: 845px;
+	margin-left: 35px;
+	margin-right: 10px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#homeinfo{
+	width: 860px;
+	height: 190px;
+	margin-left: 20px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#homeinfodata{
+	display: table-cell;
+	vertical-align: top;
+	width: 500px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#homeinfologo{
+	display: table-cell;
+	width: 380px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#worksum{
+	display: flex;
+    align-items: center;
+	width: 1275px;
+	height: 170px;
+	margin-top: 10px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#wsl{
+	display: table-cell;
+	width: 1100px;
+	height: 160px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#wsr{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 175px;
+	height: 160px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#workhead{
+	vertical-align: middle;
+	width: 1100px;
+	height: 40px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#work{
+	width: 1100px;
+	height: 30px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#titw{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 1em;
+	width: 250px;
+	text-align: left;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#progw{
+	display: table-cell;
+	vertical-align: middle;
+	width: 450px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#etaw{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#descw{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 11px;
+	width: 300px;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
 div#navigation{
 	background-color:rgb(35, 55, 59);
 	font-size: 0.9em;
