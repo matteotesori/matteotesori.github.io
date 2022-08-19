@@ -339,6 +339,90 @@ div#footer a:hover, a:active{
 	color: #FF8000;
 }
 
+div#educont{
+	display: table-cell;
+	width: 1280px;
+	height: 510px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#edul{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 50px;
+	height: 500px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#educ{
+	display: table-cell;
+	vertical-align: middle;
+	width: 1180px;
+	height: 500px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#edur{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 50px;
+	height: 500px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#educl{
+	display: table-cell;
+	text-align: center;
+	width: 590px;
+	height: 500px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
+
+div#educr{
+	display: table-cell;
+	text-align: center;
+	width: 590px;
+	height: 500px;
+	padding: 1px;
+	background-color: rgb(35, 55, 59); 
+	color: white;
+	border-top: 0px solid #999;
+	border-bottom: 0px solid #999;
+	border-left: 0px solid #999;
+	border-right: 0px solid #999;
+}
 
 h1,h2{
 	margin: 0;
@@ -502,7 +586,7 @@ img{
 
 .button {
 	border: none;
-	color: white;
+	color: #FF8000;
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -568,7 +652,7 @@ span#copyleft {
 	color:rgb(35, 55, 59);
 	background-color: #ffffff;
 	width: 1000px;
-	height: 550px;
+	height: 620px;
 	padding: 30px 40px;
 	position: fixed;
     left: 50%;
@@ -620,7 +704,7 @@ span#copyleft {
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 45%;
+	width: 65%;
   }
 
 @keyframes fadeInAnimation {
