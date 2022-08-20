@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="stile.css"> <!-- Resource style -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Mask2 - Animated Intro Section | CodyHouse</title>
+	<meta http-equiv = "refresh" content = "8; url = https://matteotesori.github.io" />
+</head>
+<body>
+<section class="cd-intro">
+	<div class="cd-intro-content mask-2">
+		<div class="content-wrapper">
+			<div>
+				<div id="title">
+				<img src="radarname2.svg" width="100%">
+				<div class="progress-bar" style="margin-top: 5px;">
+					<span class="progress-bar-fill" style="width: 0%"></span>
+				</div>
+				<div style="margin-top: 20px;">
+				welcome to my personal webspace
+				</div>
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+</section>
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+$('.progress-bar-fill').delay(1000).queue(function () {
+        $(this).css('width', '100%')
+    });
+</script>
+</body>
+</html>
