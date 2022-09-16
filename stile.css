@@ -16,7 +16,6 @@ body{
 	text-align: left;
 	color: #333;
 	background-color: rgba(35, 55, 59);
-	background-color: black;
 	animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
