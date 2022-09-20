@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+
+<head>
+<title> Matteo:Tesori </title>
+
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="author" content="Matteo Tesori">
+<meta name="description" content="Online Portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=0.2, maximum-scale=2 minimum-scale=0.2">
+
+<link rel="shortcut icon" href="../favicon.ico" >
+<link rel="stylesheet" href="../stile.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+
+<!-- BUTTON SCRIPT-->
+<script>
+	function myFunction() {
+	  alert("Why did you press it?");
+	}
+</script>
+<!--NAVIGATION SCRIPT-->
+<script>
+    document.onkeydown = arrowChecker;
+  
+    function arrowChecker(e) {  
+        e = e || window.event;
+        if (e.keyCode == '37') { //left
+            document.location.href = "res2.html";
+        }
+        else if (e.keyCode == '39') { //right
+          document.location.href = "res4.html";
+        }
+        if (e.keyCode == '32') { //spacebar
+          document.location.href = "len.html";
+        }
+    }
+  </script>
+</head>
+
+
+<body>
+<div id="container">
+	<div id="main">
+        <div id="header">
+            <div style="width: 618px; float: left;"><h1>Re:search (3/?)</h1></div>							
+            <div style="margin-left: 618px; border: 0px solid white; display: table-cell; width: 44px;"><img src="../immagini/florence.svg" width="44" height="44" title="Viva Fiorenza!"></div>						
+            <div style="margin-left: 618px; border: 0px solid white; display: table-cell; width: 444px;"></div>						
+            <div style="border: 0px solid white; display: table-cell; width: 250px;"><img src="../immagini/flsil.svg" width="250" height="44" title="a lovely silhouette"></div>      
+            <hr noshade size=2px color = "#FF8000"> 
+          </div>
+      
+          <div id="educont">
+            <div id="edul">
+                <a href="res2.html"><span style='font-size:50px;'>&#8678;</span></a>
+            </div>
+
+            <div id="educ" style="border: 0px solid white;">
+              <div id="educl" style="border: 0px solid white; text-align: justify; padding-left: 10px; padding-right: 10px;">
+                <p style="margin-bottom: 2px"><b>INTRO (part 2)</b></p>
+                Beside the main challenge of understanding the FISST, a second central point of my master thesis is the theory behind the extended objects.
+                <br>
+                The are several dif&zwnj;ferent approach to extended object tracking, each of them with their particular strong and weak points.
+                I've decided to follow the approach introduced by [<a href="https://ieeexplore.ieee.org/author/38262259600">Wolfang Koch</a>] in 2006, and latterly developed by [<a href="https://ieeexplore.ieee.org/author/37411831300">Marcus Baum</a>] et al. in 2012, where the extension of the 
+                tracked object is geometrically represented in terms of a suitable ellipse (in 2-dimensional problems) or a suitable ellipsoid (in 3-dimensional problems).
+                <br>
+                The reason why I do really like the ellipsoidal approach consists in the fact that the relative ending trackers have three very good properties:
+                <ul style="margin-bottom: 8px;">
+                  <li><b>1)</b> they have low computational and memory requirements;</li>
+                  <li><b>2)</b> they identif&zwnj;ies the principal axes of the object;</li>
+                  <li><b>3)</b> they identif&zwnj;ies orientation of the object.</li>
+                </ul>
+                Such good properties are an immediate consequence of the (very clever!) ellipsoidal approximation which, essentially, focus the attention not on the
+                precise shape of the object countour, but rather on the most relevant characteristics, i.e. the principal axes and the director angles, of the object contour. 
+                <br>
+                However, in my personal and humble opinion, the trackers suggested by Wolfang Koch and Marcus Baum et al. do not completely exploit the precious information about
+                the orientation of the object. Given this fact, in my thesis I've suggested some adaptation to their approach, which represent my f&zwnj;irst scientif&zwnj;ic contribution.
+                <br>
+                The main drawback of the ellipsoidal approach consists in the underlying theory, namely the [<a href="https://en.wikipedia.org/wiki/Random_matrix#:~:text=In%20probability%20theory%20and%20mathematical,represented%20mathematically%20as%20matrix%20problems.">random matrix theory</a>], which is not straightforward at all.
+              </div>
+              <div id="educr" style="border: 0px solid white; text-align: left; padding-left: 10px; padding-right: 10px;">
+                <p style="margin-bottom: 2px; text-align: center;"><b>2-dimensional example in bird eye view</b></p>
+                <img src="../immagini/extendedcarr.svg" style="width: 100%; display: table-cell; margin: auto;"> 
+                <div style="width: 90%; border: 0px solid white; margin: auto; margin-top: 12px; text-align: justify; font-size: 14px;">
+                  An extended object is a physical object that occupies more than a single resolution cell of the sensor employed. 
+                  As a result, an extended object can generate multiple detections, usually af&zwnj;f&zwnj;ected by noise, in the same sampling interval.<br>
+                  The elliptical trackers are able to estimate, in a very ef&zwnj;f&zwnj;icient way, the position, the orientation and the
+                  extension of the tracked object from the set of detections.
+                </div>         
+              </div>
+            </div>
+
+            <div id="edur">
+                <a href="res4.html"><span style='font-size:50px;'>&#8680;</span></a>
+            </div>
+        </div>
+	</div>
+
+
+	<div id="navigation"> 
+		<hr noshade width=100% size=1px color = "white">
+		<ul>      
+			<li><a href="home.html">HOME</a></li>
+      		<li><a href="edu1.html">EDUCATION</a></li>
+			<li style="font-size:25px"><b>RESEARCH</b></li>
+            <li><a href="len.html">LECTURE NOTES</a></li>
+			<li><a href="pen.html">PERSONAL NOTES</a></li>
+            <li><a href="pub.html">PUBLICATIONS</a></li>
+			<li><a href="dem.html">DEMOS</a></li>
+			<li><a href="sos.html"><span STYLE="text-decoration:overline">SOS</span></a></li>
+        </ul>
+		<hr noshade width=100% size=1px color="white">
+	</div>
+	
+
+	<div id="footer">
+		<table style="width:100%">
+            <tr>
+                <td align="right"><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="../immagini/cc-zero.svg" width="150"></a></td>
+                <td></td>
+                <td align="left">
+                    <span id="copyleft"><a href="https://en.wikipedia.org/wiki/Copyleft#:~:text=Copyleft%20is%20the%20legal%20technique,be%20preserved%20in%20derivative%20works.">&copy;</a></span> Matteo:6057		
+                    <br>
+                    made w/ ♥ in 2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+                </td>
+            </tr>
+        </table>
+	</div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides1");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+    let slideIndex2 = 0;
+    showSlides2();
+
+    function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+    }
+    /*
+
+    /*
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    */
+    </script>
+
+</body>
+
+</html>
