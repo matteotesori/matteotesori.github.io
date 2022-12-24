@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+
+<head>
+<title> Matteo:Tesori </title>
+
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="author" content="Matteo Tesori">
+<meta name="description" content="Online Portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=2, minimum-scale=0.2">
+
+<link rel="shortcut icon" href="../favicon.ico" >
+<link rel="stylesheet" href="../stile.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+
+<!-- BUTTON SCRIPT-->
+<script>
+	function myFunction() {
+	  alert("Why did you press it?");
+	}
+</script>
+<!--NAVIGATION SCRIPT-->
+<script>
+    document.onkeydown = arrowChecker;
+  
+    function arrowChecker(e) {  
+        e = e || window.event;
+        if (e.keyCode == '37') { //left
+            document.location.href = "res8.html";
+        }
+        else if (e.keyCode == '39') { //right
+          document.location.href = "res10.html";
+        }
+        if (e.keyCode == '32') { //spacebar
+          document.location.href = "len.html";
+        }
+    }
+  </script>
+</head>
+
+
+<body>
+<div id="container">
+	<div id="main">
+        <div id="header">
+            <div style="width: 618px; float: left;"><h1>Re:search (9/?)</h1></div>							
+            <div style="margin-left: 618px; border: 0px solid white; display: table-cell; width: 44px;"><img src="../immagini/florence.svg" width="44" height="44" title="Viva Fiorenza!"></div>						
+            <div style="margin-left: 618px; border: 0px solid white; display: table-cell; width: 444px;"></div>						
+            <div style="border: 0px solid white; display: table-cell; width: 250px;"><img src="../immagini/flsil.svg" width="250" height="44" title="a lovely silhouette"></div>      
+            <hr noshade size=2px color = "#FF8000"> 
+          </div>
+      
+          <div id="educont">
+            <div id="edul">
+                <a href="res8.html"><span style='font-size:50px;'>&#8678;</span></a>
+            </div>
+
+            <div id="educ" style="border: 0px solid white;">
+              <p style="margin-bottom: 2px"><b>PhD - I year (part 3) </b></p>
+                <!--At this point a couple of natural questions arise: why one <mark class="green"> should employ</mark> Λ:O in their trackers? and why one <mark class="red">shouldn't employ</mark> Λ:O in their trackers?-->
+                In short, Λ:O is a model suitable to predict complex motions at the price of requiring accurate measurements. More in detail, Λ:O has the following characteristics.
+
+              <div id="educl" style="border: 0px solid white; text-align: justify; padding-left: 10px; padding-right: 15px;">
+                <p style="margin-bottom: -1px; text-align: center;"><b><mark class="green">Λ:O PROs</mark></b>
+                  <hr noshade width="width:1px" size=1px color = "#00ff00">
+                </p>
+                <p style="text-align: justify;">
+                  <ul style="margin-bottom: 20px;">
+                    <li>
+                      <b>1) Maneuvering object tracking</b> <br> 
+                      Λ:O takes directly into account in its model that the object can maneuver during its motion, i.e. can move with a longitudinal and a steering speeds that 
+                      can vary in time. In order to do that, Λ:O includes in its model not only the longitudinal and the steering speed, but also their time-derivatives 
+                      (Λ derivatives for the longitudinal speed, O derivatives for the steering speed - where Λ and O are design parameters that can be arbitrarily choosen by the user);
+                    </li>
+                    <li>
+                      <b>2) Extended object tracking </b> <br> 
+                      Λ:O f&zwnj;its in a very natural manner in extended object tracking tanks to the heading angle: Λ:O exploit the heading angle to predict the future position of the object, 
+                      the object extension provides to Λ:O an indirect observation of the heading angle;
+                    </li>
+                    <li>
+                      <b>3) Interpretability </b> <br> 
+                      Λ:O stresses the use of the longitudinal and steering speeds as state variables, which can be easily understood as the input commands 
+                      ("gas pedal" and "steering wheel" command) choosen by the object driver. As a result, Λ:O points out clearly out when the object maneuvers.
+                      Moreover, the steering speed variable can be easily converted in centripetal acceleration or curvature radius, providing additional information about the object motion.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+              <div id="educr" style="border: 0px solid white; text-align: justify; padding-left: 10px; padding-right: 15px;">
+                <p style="margin-bottom: 2px; text-align: center;"><b><mark class="red">Λ:O CONs</mark></b>
+                  <hr noshade width="width:1px" size=1px color = "#ED0800">
+                </p>
+                <p style="margin-bottom: 2px; text-align: justify;">
+                  <ul style="margin-bottom: 20px;">
+                    <li>
+                      <b>1) Information greediness</b> <br> 
+                      Λ:O can employ a big number of state variables and each of them must be well estimated. If this is not the case, the ef&zwnj;f&zwnj;ect of
+                      using a lot of state variables becomes detrimental rather than benef&zwnj;icial. As a result, Λ:O is particularly sensitive to the measurement noise.
+                      If the noise covariance is too high, the problem can be mitigated by processing simultaneously multiple measurements (like in the extended object case) or by reducing the sampling time;
+                    </li>
+                    <li>
+                      <b>2) Inertial ef&zwnj;fect</b> <br> 
+                      As Λ and O grows, Λ:O slows down its response with respect to rapid variation in the object movement. This problem can be mitigated by
+                      adding white noise on each state variable (rather than just the Λth and Oth derivatives of the longitudinal and steering speeds);
+                    </li>
+                    <li>
+                      <b>3) Inexact discretization</b> <br> 
+                      The Tustin discretization introduces errors in the prediction, and such errors can be seen as a quantization noise that adds up to the measurement noise.
+                      This problem can be mitigated by employing exact discretization schemes (that are possible when Λ and O are small, e.g. up to the value 1) or semi-exact discretization schemes 
+                      (one of my new ideas under development - coming soon!).
+                    </li>
+                  </ul>
+                </p>        
+              </div> 
+            </div>
+
+            <div id="edur">
+                <a href="res10.html"><span style='font-size:50px;'>&#8680;</span></a>
+            </div>
+        </div>
+	</div>
+
+
+	<div id="navigation"> 
+		<hr noshade width=100% size=1px color = "white">
+		<ul>      
+			<li><a href="home.html">HOME</a></li>
+      		<li><a href="edu1.html">EDUCATION</a></li>
+			<li style="font-size:25px"><b>RESEARCH</b></li>
+            <li><a href="len.html">LECTURE NOTES</a></li>
+			<li><a href="pen.html">PERSONAL NOTES</a></li>
+            <li><a href="pub.html">PUBLICATIONS</a></li>
+			<li><a href="dem.html">DEMOS</a></li>
+			<li><a href="sos.html"><span STYLE="text-decoration:overline">SOS</span></a></li>
+        </ul>
+		<hr noshade width=100% size=1px color="white">
+	</div>
+	
+
+	<div id="footer">
+		<table style="width:100%">
+            <tr>
+                <td align="right"><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="../immagini/cc-zero.svg" width="150"></a></td>
+                <td></td>
+                <td align="left">
+                    <span id="copyleft"><a href="https://en.wikipedia.org/wiki/Copyleft#:~:text=Copyleft%20is%20the%20legal%20technique,be%20preserved%20in%20derivative%20works.">&copy;</a></span> Matteo:6057		
+                    <br>
+                    made w/ ♥ in 2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+                </td>
+            </tr>
+        </table>
+	</div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides1");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+    let slideIndex2 = 0;
+    showSlides2();
+
+    function showSlides2() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";  
+    dots[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+    }
+    /*
+
+    /*
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    */
+    </script>
+
+</body>
+
+</html>
