@@ -91,6 +91,11 @@ mark.green{
     background: none;
 }
 
+mark.blue{
+	color: blue;
+    background: none;
+}
+
 div#portrait{
 	vertical-align: middle;
 	display: table-cell;
